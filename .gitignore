@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+playwright-report/
+test-results/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store

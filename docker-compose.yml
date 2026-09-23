@@ -1,0 +1,16 @@
+services:
+  api:
+    build: ./backend
+    container_name: duty-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  web:
+    build: ./web
+    container_name: duty-web
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
